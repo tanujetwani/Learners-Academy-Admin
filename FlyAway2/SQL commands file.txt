@@ -1,0 +1,80 @@
+SQL command issued for Creating table "flights":
+
+create table Flights(ID bigint(20) primary key auto_increment,
+ source varchar(100) Default NULL,
+ destination varchar(100) Default NULL,
+Airline_name varchar(100) Default NULL,
+ Flight_date DATETIME , price decimal(10,2) Default  Null);
+
+------------------------------------------------------------------------------------
+
+SQL command issued for inserting data in table "flights":
+
+insert into flights(source,destination,Airline_name,Flight_date,price)
+ values('Delhi','Mumbai','Air Deccan','2023-06-07',7000);
+
+insert into flights(source,destination,Airline_name,Flight_date,price) 
+values('Delhi','Mumbai','Air India','2023-04-07',6000);
+
+insert into flights(source,destination,Airline_name,Flight_date,price)
+ values('Delhi','Mumbai','Indigo','2023-06-07',8000);
+
+insert into flights(source,destination,Airline_name,Flight_date,price) 
+values('Delhi','Mumbai','Go Air','2023-06-07',9000);
+
+insert into flights(source,destination,Airline_name,Flight_date,price)
+ values('Delhi','Mumbai','Spice Jet','2023-06-07',9500);
+
+insert into flights(source,destination,Airline_name,Flight_date,price)
+ values('Delhi','Mumbai','Air India','2023-06-07',8500);
+
+insert into flights(source,destination,Airline_name,Flight_date,price)
+ values('Delhi','Mumbai','Indian Airlines','2023-06-07',7500);
+
+insert into flights(source,destination,Airline_name,Flight_date,price) 
+values('Agra','Blore','Indian Airlines','2023-05-07',7500);
+
+insert into flights(source,destination,Airline_name,Flight_date,price)
+ values('Jaipur','Chennai','Indian Airlines','2023-05-08',7500);
+
+insert into flights(source,destination,Airline_name,Flight_date,price) 
+values('Jaipur','Chennai','Go Air','2023-05-08',9500);
+
+insert into flights(source,destination,Airline_name,Flight_date,price) 
+values('Jaipur','Chennai','SpiceJet','2023-05-08',5500);
+
+insert into flights(source,destination,Airline_name,Flight_date,price)
+values('Jaipur','Chennai','Air Deccan','2023-05-08',4500);
+
+------------------------------------------------------------------------------------------
+
+SQL command issued to select records from table "flights"
+
+select * from flights;
++----+--------+-------------+-----------------+-------------+---------+
+| ID | source | destination | Airline_name    | Flight_date | price   |
++----+--------+-------------+-----------------+-------------+---------+
+|  1 | Delhi  | Mumbai      | Air India       | 2023-04-07  | 6000.00 |
+|  2 | Delhi  | Mumbai      | Air Deccan      | 2023-06-07  | 7000.00 |
+|  3 | Delhi  | Mumbai      | Indigo          | 2023-06-07  | 8000.00 |
+|  4 | Delhi  | Mumbai      | Go Air          | 2023-06-07  | 9000.00 |
+|  5 | Delhi  | Mumbai      | SpiceJet        | 2023-06-07  | 9500.00 |
+|  6 | Delhi  | Mumbai      | Air India       | 2023-06-07  | 8500.00 |
+|  7 | Delhi  | Mumbai      | Indian Airlines | 2023-06-07  | 7500.00 |
+|  8 | Agra   | Blore       | Indian Airlines | 2023-05-07  | 7500.00 |
+|  9 | Jaipur | Chennai     | Indian Airlines | 2023-05-08  | 7500.00 |
+| 10 | Jaipur | Chennai     | Go Air          | 2023-05-08  | 9500.00 |
+| 11 | Jaipur | Chennai     | SpiceJet        | 2023-05-08  | 5500.00 |
+| 12 | Jaipur | Chennai     | Air Deccan      | 2023-05-08  | 4500.00 |
++----+--------+-------------+-----------------+-------------+---------+
+
+
+
+
+
+
+
+
+
+
+
