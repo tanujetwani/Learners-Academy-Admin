@@ -1,0 +1,73 @@
+Commands issued to create tables and insert data into them
+
+create table teachers(
+id bigint(10) primary key auto_increment, 
+tname varchar(20));
+
+insert into teachers values (1,'Reena');
+
+insert into teachers values (2,'Sita');
+
+insert into teachers values (3,'Shalu');
+
+insert into teachers values (4,'Ramesh');
+
+insert into teachers values (5,'Suresh');
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+create table subjects(
+Id bigint(10) primary key auto_increment, 
+sname varchar(15));
+
+insert into subjects values (1,'Java');
+insert into subjects values (2,'DotNet');
+insert into subjects values (3,'English');
+insert into subjects values (4,'Maths');
+insert into subjects values (5,'Science');
+insert into subjects values (6,'Hindi');
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+create table classes(
+Id bigint(10),cname varchar(20),tid bigint(10),sid bigint(10),
+Foreign key (tid)references teachers(id), Foreign key (sid)references subjects(Id),
+Primary Key(Id,sid));
+
+
+insert into classes(Id,cname,sid) values(1,'Section A',3);
+insert into classes(Id,cname,sid) values(2,'Section B',1);
+insert into classes(Id,cname,sid) values(3,'Section C',2);
+insert into classes(Id,cname,sid) values(4,'Section D',3);
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+create table students(
+ID bigint(10)primary key auto_increment, stuname varchar(20),
+class_id bigint(10),Foreign key(class_id) references classes(Id));
+
+insert into students values(1,'Varun',1);
+insert into students values(2,'Vartika',1);
+insert into students values(3,'ashish',1);
+insert into students values(4,'Tarun',2);
+insert into students values(5,'Rhea',2);
+insert into students values(6,'Ruksana',2);
+insert into students values(7,'Shweta',3);
+insert into students values(8,'sandeep',4);
+insert into students values(9,'Shiv',4);
+insert into students values(10,'Shourya',4);
+insert into students values(11,'Gaurav',4);
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
